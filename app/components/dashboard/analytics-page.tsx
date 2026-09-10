@@ -19,7 +19,7 @@ export function AnalyticsPage() {
   return (
     <div className="mx-auto max-w-6xl">
       <div className="mb-6">
-        <p className="text-sm font-medium text-[var(--accent-purple)]">Analytics</p>
+        <p className="text-sm font-medium text-[var(--accent-orange)]">Analytics</p>
         <h1 className="mt-1 text-2xl font-bold text-[var(--text-primary)] md:text-3xl">
           Performance Analytics
         </h1>
@@ -52,7 +52,7 @@ export function AnalyticsPage() {
             {[40, 65, 45, 80, 55, 90, 70, 85, 60, 95, 75, 88].map((h, i) => (
               <div
                 key={i}
-                className="flex-1 rounded-t bg-[var(--accent-purple)] opacity-80"
+                className="flex-1 rounded-t bg-[var(--accent-orange)] opacity-80"
                 style={{ height: `${h}%` }}
               />
             ))}

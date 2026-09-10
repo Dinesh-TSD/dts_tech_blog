@@ -5,7 +5,6 @@ import { btnSecondary } from "../../lib/dashboard";
 import { ContentStep } from "./ai-writer/content-step";
 import { ImagesStep } from "./ai-writer/images-step";
 import { OutlineStep } from "./ai-writer/outline-step";
-import { PreviewStep } from "./ai-writer/preview-step";
 import { PublishStep } from "./ai-writer/publish-step";
 import { ResearchStep } from "./ai-writer/research-step";
 
@@ -111,7 +110,7 @@ export function AiWriterPage() {
   return (
     <div className="mx-auto max-w-6xl">
       <header className="mb-6">
-        <p className="text-sm font-medium text-[var(--accent-purple)]">AI Writer</p>
+        <p className="text-sm font-medium text-[var(--accent-orange)]">AI Writer</p>
         <div className="mt-1 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
           <div>
             <h1 className="text-2xl font-bold text-[var(--text-primary)] md:text-3xl">Create an article</h1>
@@ -137,7 +136,7 @@ export function AiWriterPage() {
                   type="button"
                   disabled={!available}
                   onClick={() => setActiveStep(index)}
-                  className={`flex items-center gap-2 rounded-lg px-3 py-2 text-left text-xs font-semibold transition-colors ${activeStep === index ? "bg-[var(--accent-purple)] text-white" : completed[index] ? "text-emerald-400" : "text-[var(--text-secondary)] disabled:cursor-not-allowed"}`}
+                  className={`flex items-center gap-2 rounded-lg px-3 py-2 text-left text-xs font-semibold transition-colors ${activeStep === index ? "bg-[var(--accent-orange)] text-white" : completed[index] ? "text-emerald-400" : "text-[var(--text-secondary)] disabled:cursor-not-allowed"}`}
                 >
                   <span
                     className={`flex size-6 shrink-0 items-center justify-center rounded-full border text-[11px] ${completed[index] ? "border-emerald-400 bg-emerald-400 text-slate-950" : activeStep === index ? "border-white" : "border-current"}`}

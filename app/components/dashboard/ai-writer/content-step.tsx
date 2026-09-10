@@ -48,7 +48,7 @@ export function ContentStep({ keyword, outline, title, excerpt, content, onGener
     <section>
       <div className={`${panel} mb-4 flex flex-col justify-between gap-4 sm:flex-row sm:items-center`}>
         <div>
-          <p className="text-xs font-semibold uppercase tracking-wide text-[var(--accent-purple)]">Selected outline</p>
+          <p className="text-xs font-semibold uppercase tracking-wide text-[var(--accent-orange)]">Selected outline</p>
           <p className="mt-1 text-sm text-[var(--text-secondary)]">{outline.length} sections for {keyword}</p>
         </div>
         <button type="button" className={btnPrimary} onClick={() => void generate()} disabled={loading}>{loading ? "Generating..." : "Generate full article"}</button>
@@ -58,9 +58,9 @@ export function ContentStep({ keyword, outline, title, excerpt, content, onGener
         <div className="grid gap-4 lg:grid-cols-[1.4fr_0.6fr]">
           <article className={panel}>
             <p className="text-xs font-semibold uppercase tracking-wide text-emerald-400">Full article content</p>
-            <input className="mt-4 w-full border-0 border-b border-[var(--border)] bg-transparent pb-3 text-2xl font-bold text-[var(--text-primary)] focus:border-[var(--accent-purple)] focus:outline-none" value={article.title} onChange={(event) => setArticle({ ...article, title: event.target.value })} aria-label="Article title" />
+            <input className="mt-4 w-full border-0 border-b border-[var(--border)] bg-transparent pb-3 text-2xl font-bold text-[var(--text-primary)] focus:border-[var(--accent-orange)] focus:outline-none" value={article.title} onChange={(event) => setArticle({ ...article, title: event.target.value })} aria-label="Article title" />
             <textarea className="mt-4 min-h-28 w-full resize-y border-0 bg-transparent text-sm leading-7 text-[var(--text-secondary)] focus:outline-none" value={article.excerpt} onChange={(event) => setArticle({ ...article, excerpt: event.target.value })} aria-label="Article excerpt" />
-            <textarea className="mt-3 min-h-80 w-full resize-y rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] p-4 text-sm leading-7 text-[var(--text-primary)] focus:border-[var(--accent-purple)] focus:outline-none" value={article.content} onChange={(event) => setArticle({ ...article, content: event.target.value })} aria-label="Article content" />
+            <textarea className="mt-3 min-h-80 w-full resize-y rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] p-4 text-sm leading-7 text-[var(--text-primary)] focus:border-[var(--accent-orange)] focus:outline-none" value={article.content} onChange={(event) => setArticle({ ...article, content: event.target.value })} aria-label="Article content" />
             <div className="mt-4 flex flex-wrap gap-3">
               <button type="button" className={btnSecondary} onClick={() => void generate()} disabled={loading}>{loading ? "Generating..." : "Regenerate"}</button>
               <button

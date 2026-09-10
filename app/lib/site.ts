@@ -16,10 +16,10 @@ export function formatArticleDate(date?: string | Date) {
 }
 
 export const btnPrimary =
-  "inline-flex cursor-pointer items-center gap-2 rounded-lg border-none bg-[var(--accent-purple)] px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90";
+  "inline-flex cursor-pointer items-center gap-2 rounded-lg border-none bg-[var(--accent-orange)] px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90";
 
 export const inputClass =
-  "w-full rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-2.5 text-sm text-[var(--text-primary)] transition-[border,background] duration-300 placeholder:text-[var(--text-secondary)] focus:border-[var(--accent-purple)] focus:outline-none";
+  "w-full rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-2.5 text-sm text-[var(--text-primary)] transition-[border,background] duration-300 placeholder:text-[var(--text-secondary)] focus:border-[var(--accent-orange)] focus:outline-none";
 
 export function footerHref(label: string) {
   const map: Record<string, string> = {
@@ -48,12 +48,12 @@ export const navLink =
 
 export function navLinkActiveClass(isActive: boolean) {
   return isActive
-    ? `${navLink} border-b-2 border-[var(--accent-purple)] text-[var(--text-primary)]`
+    ? `${navLink} border-b-2 border-[var(--accent-orange)] text-[var(--text-primary)]`
     : navLink;
 }
 
 export const iconBtn =
-  "flex size-9 cursor-pointer items-center justify-center rounded-full border border-transparent bg-transparent text-[var(--text-secondary)] transition-all duration-300 hover:border-[var(--border)] hover:bg-[var(--bg-secondary)] hover:text-[var(--text-primary)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent-purple)]";
+  "flex size-9 cursor-pointer items-center justify-center rounded-full border border-transparent bg-transparent text-[var(--text-secondary)] transition-all duration-300 hover:border-[var(--border)] hover:bg-[var(--bg-secondary)] hover:text-[var(--text-primary)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent-orange)]";
 
 export const card =
   "rounded-xl border border-[var(--border)] bg-[var(--bg-secondary)] p-[21px]";

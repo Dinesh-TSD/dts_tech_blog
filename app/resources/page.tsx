@@ -98,8 +98,8 @@ export default function ResourcesPage() {
               key={type}
               className={`cursor-pointer rounded-lg border px-3.5 py-1.5 text-sm font-medium transition-all duration-300 ${
                 i === 0
-                  ? "border-[var(--accent-purple)] bg-[var(--accent-purple)] text-white"
-                  : "border-[var(--border)] bg-[var(--bg-secondary)] text-[var(--text-secondary)] hover:border-[var(--accent-purple)]"
+                  ? "border-[var(--accent-orange)] bg-[var(--accent-orange)] text-white"
+                  : "border-[var(--border)] bg-[var(--bg-secondary)] text-[var(--text-secondary)] hover:border-[var(--accent-orange)]"
               }`}
             >
               {type}
@@ -111,7 +111,7 @@ export default function ResourcesPage() {
           {resources.map((r) => (
             <article
               key={r.title}
-              className={`${card} flex flex-col transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-purple)]`}
+              className={`${card} flex flex-col transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-orange)]`}
             >
               <div className="flex items-start justify-between">
                 <span className="text-2xl">{r.icon}</span>
@@ -119,7 +119,7 @@ export default function ResourcesPage() {
                   {r.format}
                 </span>
               </div>
-              <span className="mt-3 text-[10px] font-bold tracking-wide text-[var(--accent-purple)] uppercase">
+              <span className="mt-3 text-[10px] font-bold tracking-wide text-[var(--accent-orange)] uppercase">
                 {r.type}
               </span>
               <h2 className="mt-1 text-sm font-bold text-[var(--text-primary)]">
@@ -130,7 +130,7 @@ export default function ResourcesPage() {
               </p>
               <button
                 type="button"
-                className="mt-4 w-fit cursor-pointer text-xs font-semibold text-[var(--accent-purple)]"
+                className="mt-4 w-fit cursor-pointer text-xs font-semibold text-[var(--accent-orange)]"
               >
                 Download Free →
               </button>
@@ -148,7 +148,7 @@ export default function ResourcesPage() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="flex items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-4 py-3 text-sm font-medium text-[var(--text-primary)] no-underline transition-all hover:border-[var(--accent-purple)]"
+                  className="flex items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-4 py-3 text-sm font-medium text-[var(--text-primary)] no-underline transition-all hover:border-[var(--accent-orange)]"
                 >
                   <span>{link.icon}</span>
                   {link.label}

@@ -12,7 +12,7 @@ export function SettingsPage() {
   return (
     <div className="mx-auto max-w-3xl">
       <div className="mb-6">
-        <p className="text-sm font-medium text-[var(--accent-purple)]">Settings</p>
+        <p className="text-sm font-medium text-[var(--accent-orange)]">Settings</p>
         <h1 className="mt-1 text-2xl font-bold text-[var(--text-primary)] md:text-3xl">
           Settings
         </h1>
@@ -75,7 +75,7 @@ export function SettingsPage() {
               type="checkbox"
               checked={item.checked}
               onChange={(e) => item.onChange(e.target.checked)}
-              className="mt-1 size-4 accent-[var(--accent-purple)]"
+              className="mt-1 size-4 accent-[var(--accent-orange)]"
             />
           </label>
         ))}

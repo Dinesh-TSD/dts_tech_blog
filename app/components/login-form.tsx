@@ -9,7 +9,7 @@ import { loginWithApi, registerWithApi } from "../lib/auth";
 type AuthMode = "signin" | "signup";
 
 const inputClass =
-  "w-full rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-2.5 text-sm text-[var(--text-primary)] transition-[border,background] duration-300 placeholder:text-[var(--text-secondary)] focus:border-[var(--accent-purple)] focus:outline-none";
+  "w-full rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-2.5 text-sm text-[var(--text-primary)] transition-[border,background] duration-300 placeholder:text-[var(--text-secondary)] focus:border-[var(--accent-orange)] focus:outline-none";
 
 function AuthDivider() {
   return (
@@ -94,7 +94,7 @@ function AuthFormInner() {
             onClick={() => switchMode("signin")}
             className={`flex-1 cursor-pointer rounded-md px-4 py-2 text-sm font-semibold transition-all duration-300 ${
               mode === "signin"
-                ? "bg-[var(--accent-purple)] text-white"
+                ? "bg-[var(--accent-orange)] text-white"
                 : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
             }`}
           >
@@ -105,7 +105,7 @@ function AuthFormInner() {
             onClick={() => switchMode("signup")}
             className={`flex-1 cursor-pointer rounded-md px-4 py-2 text-sm font-semibold transition-all duration-300 ${
               mode === "signup"
-                ? "bg-[var(--accent-purple)] text-white"
+                ? "bg-[var(--accent-orange)] text-white"
                 : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
             }`}
           >
@@ -175,7 +175,7 @@ function AuthFormInner() {
                 {mode === "signin" && (
                   <Link
                     href="/forgot-password"
-                    className="text-xs font-medium text-[var(--accent-purple)] no-underline hover:underline"
+                    className="text-xs font-medium text-[var(--accent-orange)] no-underline hover:underline"
                   >
                     Forgot password?
                   </Link>
@@ -217,7 +217,7 @@ function AuthFormInner() {
           <button
             type="submit"
             disabled={loading}
-            className="mt-6 inline-flex w-full cursor-pointer items-center justify-center rounded-lg border-none bg-[var(--accent-purple)] px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
+            className="mt-6 inline-flex w-full cursor-pointer items-center justify-center rounded-lg border-none bg-[var(--accent-orange)] px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
           >
             {loading
               ? mode === "signin"
@@ -231,7 +231,7 @@ function AuthFormInner() {
       </div>
 
       <p className="mt-4 text-center text-sm text-[var(--text-secondary)]">
-        <Link href="/" className="font-medium text-[var(--accent-purple)] no-underline hover:underline">
+        <Link href="/" className="font-medium text-[var(--accent-orange)] no-underline hover:underline">
           ← Back to home
         </Link>
       </p>

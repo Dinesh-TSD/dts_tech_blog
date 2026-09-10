@@ -2,49 +2,97 @@
 
 :root,
 [data-theme="dark"] {
-  --bg-primary: #0a0b1a;
-  --bg-secondary: #13152b;
+  /* Primary Background - Dark navy-black */
+  --bg-primary: #0f1419;
+  --bg-secondary: #1a1f2e;
+  --bg-tertiary: #252b3a;
   --bg-img: url("/herobg-b.png");
-  --border: #1e293b;
-  --text-primary: #e2e8f0;
-  --text-secondary: #94a3b8;
-  --accent-purple: #6d28d9;
-  --accent-blue: #3b82f6;
-  --nav-bg: rgba(19, 21, 43, 0.7);
-  --glass-bg: rgba(19, 21, 43, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.05);
-  --badge-bg: rgba(0, 0, 0, 0.3);
+  
+  /* Text Colors - White and light grays */
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --text-tertiary: #9ca3af;
+  
+  /* Orange Accent Colors */
+  --accent-orange: #ff8c42;
+  --accent-orange-light: #ffb366;
+  --accent-orange-dark: #e67e22;
+  --accent-orange-darker: #d35400;
+  
+  /* Borders & Components */
+  --border: #2d3748;
+  --nav-bg: rgba(26, 31, 46, 0.85);
+  --glass-bg: rgba(26, 31, 46, 0.8);
+  --glass-border: rgba(255, 140, 66, 0.15);
+  --badge-bg: rgba(255, 140, 66, 0.15);
   --btn-secondary-text: #ffffff;
-  --footer-border: rgba(30, 41, 59, 0.5);
-  --trending-num: rgba(148, 163, 184, 0.3);
-  --hero-overlay-from: #0a0b1a;
-  --hero-overlay-via: rgba(10, 11, 26, 0.7);
+  
+  /* Gradients */
+  --gradient-orange: linear-gradient(135deg, #ff8c42 0%, #e67e22 100%);
+  --gradient-orange-dark: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+  --gradient-orange-light: linear-gradient(135deg, #ffb366 0%, #ff8c42 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(255, 140, 66, 0.15) 0%, rgba(230, 126, 34, 0.1) 100%);
+  
+  /* Footer & Borders */
+  --footer-border: rgba(255, 140, 66, 0.2);
+  --trending-num: rgba(255, 140, 66, 0.25);
+  
+  /* Hero Overlay */
+  --hero-overlay-from: #0f1419;
+  --hero-overlay-via: rgba(15, 20, 25, 0.8);
   --hero-img-opacity: 1;
+  
+  /* Typography */
   --heading-strong: #ffffff;
-  --tag-bg: rgba(0, 0, 0, 0.3);
-  --article-body-text: #cbd5e1;
+  --tag-bg: rgba(255, 140, 66, 0.1);
+  --article-body-text: #d1d5db;
 }
 
 [data-theme="light"] {
+  /* Primary Background - White & light */
   --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
+  --bg-secondary: #f9fafb;
+  --bg-tertiary: #f3f4f6;
   --bg-img: url("/herobg-w.png");
-  --border: #e2e8f0;
-  --text-primary: #0f172a;
-  --text-secondary: #64748b;
-  --nav-bg: rgba(255, 255, 255, 0.9);
-  --glass-bg: rgba(255, 255, 255, 0.92);
-  --glass-border: rgba(0, 0, 0, 0.08);
-  --badge-bg: rgba(0, 0, 0, 0.06);
-  --btn-secondary-text: #0f172a;
-  --footer-border: rgba(226, 232, 240, 0.9);
-  --trending-num: rgba(100, 116, 139, 0.35);
+  
+  /* Text Colors - Dark grays and blacks */
+  --text-primary: #1f2937;
+  --text-secondary: #374151;
+  --text-tertiary: #6b7280;
+  
+  /* Orange Accent Colors */
+  --accent-orange: #ff8c42;
+  --accent-orange-light: #ffb366;
+  --accent-orange-dark: #e67e22;
+  --accent-orange-darker: #d35400;
+  
+  /* Borders & Components */
+  --border: #e5e7eb;
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --glass-bg: rgba(255, 255, 255, 0.97);
+  --glass-border: rgba(255, 140, 66, 0.2);
+  --badge-bg: rgba(255, 140, 66, 0.1);
+  --btn-secondary-text: #1f2937;
+  
+  /* Gradients */
+  --gradient-orange: linear-gradient(135deg, #ff8c42 0%, #e67e22 100%);
+  --gradient-orange-dark: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+  --gradient-orange-light: linear-gradient(135deg, #ffb366 0%, #ff8c42 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(255, 140, 66, 0.1) 0%, rgba(230, 126, 34, 0.05) 100%);
+  
+  /* Footer & Borders */
+  --footer-border: rgba(255, 140, 66, 0.15);
+  --trending-num: rgba(255, 140, 66, 0.2);
+  
+  /* Hero Overlay */
   --hero-overlay-from: #ffffff;
-  --hero-overlay-via: rgba(255, 255, 255, 0.82);
-  --hero-img-opacity: 0.4;
-  --heading-strong: #0f172a;
-  --tag-bg: rgba(0, 0, 0, 0.05);
-  --article-body-text: #334155;
+  --hero-overlay-via: rgba(255, 255, 255, 0.9);
+  --hero-img-opacity: 0.3;
+  
+  /* Typography */
+  --heading-strong: #1f2937;
+  --tag-bg: rgba(255, 140, 66, 0.08);
+  --article-body-text: #374151;
 }
 
 html {
@@ -67,5 +115,297 @@ body {
 
 .hero-bg-img {
   opacity: var(--hero-img-opacity);
+}
+
+/* ============================================
+   GRADIENT UTILITIES
+   ============================================ */
+
+.bg-gradient-orange {
+  background: var(--gradient-orange);
+}
+
+.bg-gradient-orange-dark {
+  background: var(--gradient-orange-dark);
+}
+
+.bg-gradient-orange-light {
+  background: var(--gradient-orange-light);
+}
+
+.bg-gradient-hero {
+  background: var(--gradient-hero);
+}
+
+/* ============================================
+   BUTTON STYLES WITH ORANGE THEME
+   ============================================ */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--gradient-orange);
+  box-shadow: 0 4px 15px rgba(255, 140, 66, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 140, 66, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-primary);
+  border: 2px solid var(--accent-orange);
+  background: transparent;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 140, 66, 0.1);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 140, 66, 0.3);
+  color: var(--accent-orange);
+  background: transparent;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 140, 66, 0.05);
+  border-color: var(--accent-orange);
+}
+
+/* ============================================
+   CARD STYLES WITH GRADIENT ACCENTS
+   ============================================ */
+
+.card {
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--glass-border);
+  background: var(--bg-secondary);
+  backdrop-filter: blur(10px);
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 140, 66, 0.5),
+    transparent
+  );
+}
+
+.card:hover {
+  border-color: var(--accent-orange);
+  box-shadow: 0 8px 32px rgba(255, 140, 66, 0.15);
+  transform: translateY(-4px);
+}
+
+.card-featured {
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+  border: 1px solid var(--glass-border);
+}
+
+/* ============================================
+   FORM STYLES WITH ORANGE ACCENTS
+   ============================================ */
+
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  outline: none;
+  border-color: var(--accent-orange);
+  box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.1);
+}
+
+.form-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+/* ============================================
+   BADGE & TAG STYLES
+   ============================================ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: var(--badge-bg);
+  color: var(--accent-orange);
+  border: 1px solid rgba(255, 140, 66, 0.3);
+}
+
+.badge-orange {
+  background: linear-gradient(135deg, rgba(255, 140, 66, 0.2), rgba(230, 126, 34, 0.1));
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: var(--tag-bg);
+  color: var(--accent-orange);
+}
+
+/* ============================================
+   ICON STYLES
+   ============================================ */
+
+.icon-orange {
+  color: var(--accent-orange);
+}
+
+.icon-lg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-md {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* ============================================
+   HEADING & TEXT STYLES
+   ============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-strong);
+}
+
+.text-gradient-orange {
+  background: linear-gradient(135deg, var(--accent-orange), var(--accent-orange-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   NAVIGATION & HEADER STYLES
+   ============================================ */
+
+.nav-item {
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--text-secondary);
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item:hover {
+  color: var(--accent-orange);
+  background: rgba(255, 140, 66, 0.1);
+}
+
+.nav-item.active {
+  color: var(--accent-orange);
+  background: rgba(255, 140, 66, 0.15);
+}
+
+/* ============================================
+   LINK STYLES
+   ============================================ */
+
+a {
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover {
+  color: var(--accent-orange);
+}
+
+/* ============================================
+   SCROLLBAR STYLES
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-orange);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-orange-dark);
 }
 

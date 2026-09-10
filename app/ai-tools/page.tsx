@@ -90,8 +90,8 @@ export default function AiToolsPage() {
               key={cat}
               className={`cursor-pointer rounded-lg border px-3.5 py-1.5 text-sm font-medium transition-all duration-300 ${
                 i === 0
-                  ? "border-[var(--accent-purple)] bg-[var(--accent-purple)] text-white"
-                  : "border-[var(--border)] bg-[var(--bg-secondary)] text-[var(--text-secondary)] hover:border-[var(--accent-purple)]"
+                  ? "border-[var(--accent-orange)] bg-[var(--accent-orange)] text-white"
+                  : "border-[var(--border)] bg-[var(--bg-secondary)] text-[var(--text-secondary)] hover:border-[var(--accent-orange)]"
               }`}
             >
               {cat}
@@ -103,7 +103,7 @@ export default function AiToolsPage() {
           {tools.map((tool) => (
             <article
               key={tool.name}
-              className={`${card} flex flex-col transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-purple)]`}
+              className={`${card} flex flex-col transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-orange)]`}
             >
               <div className="flex items-start justify-between">
                 <span
@@ -112,7 +112,7 @@ export default function AiToolsPage() {
                 >
                   {tool.category}
                 </span>
-                <span className="text-[10px] font-medium text-[var(--accent-purple)]">
+                <span className="text-[10px] font-medium text-[var(--accent-orange)]">
                   {tool.tag}
                 </span>
               </div>
@@ -124,7 +124,7 @@ export default function AiToolsPage() {
               </p>
               <button
                 type="button"
-                className="mt-4 w-fit cursor-pointer text-sm font-semibold text-[var(--accent-purple)] transition-all hover:gap-2"
+                className="mt-4 w-fit cursor-pointer text-sm font-semibold text-[var(--accent-orange)] transition-all hover:gap-2"
               >
                 Learn More →
               </button>

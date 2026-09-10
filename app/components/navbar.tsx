@@ -47,7 +47,7 @@ export function Navbar() {
           </button>
           <Link
             href="/login"
-            className="flex cursor-pointer items-center gap-2 rounded-lg border-none bg-[var(--accent-purple)] px-5 py-2 text-sm font-semibold text-white no-underline transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90"
+            className="flex cursor-pointer items-center gap-2 rounded-lg border-none bg-[var(--accent-orange)] px-5 py-2 text-sm font-semibold text-white no-underline transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90"
           >
             <span>Login</span>
           </Link>

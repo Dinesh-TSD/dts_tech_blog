@@ -98,8 +98,8 @@ export default function TutorialsPage() {
               key={level}
               className={`cursor-pointer rounded-lg border px-3.5 py-1.5 text-sm font-medium transition-all duration-300 ${
                 i === 0
-                  ? "border-[var(--accent-purple)] bg-[var(--accent-purple)] text-white"
-                  : "border-[var(--border)] bg-[var(--bg-secondary)] text-[var(--text-secondary)] hover:border-[var(--accent-purple)]"
+                  ? "border-[var(--accent-orange)] bg-[var(--accent-orange)] text-white"
+                  : "border-[var(--border)] bg-[var(--bg-secondary)] text-[var(--text-secondary)] hover:border-[var(--accent-orange)]"
               }`}
             >
               {level}
@@ -111,7 +111,7 @@ export default function TutorialsPage() {
           {tutorials.map((t) => (
             <article
               key={t.title}
-              className={`${card} flex gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-purple)]`}
+              className={`${card} flex gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-orange)]`}
             >
               <div
                 className="hidden w-1.5 shrink-0 rounded-full sm:block"
@@ -138,7 +138,7 @@ export default function TutorialsPage() {
                 </div>
                 <button
                   type="button"
-                  className="mt-3 cursor-pointer text-sm font-semibold text-[var(--accent-purple)]"
+                  className="mt-3 cursor-pointer text-sm font-semibold text-[var(--accent-orange)]"
                 >
                   Start Tutorial →
                 </button>

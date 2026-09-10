@@ -22,7 +22,7 @@ export function Pagination({
         type="button"
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="cursor-pointer rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-2 text-sm font-medium text-[var(--text-primary)] transition-all duration-300 hover:border-[var(--accent-purple)] disabled:cursor-not-allowed disabled:opacity-40"
+        className="cursor-pointer rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-2 text-sm font-medium text-[var(--text-primary)] transition-all duration-300 hover:border-[var(--accent-orange)] disabled:cursor-not-allowed disabled:opacity-40"
       >
         ← Prev
       </button>
@@ -35,8 +35,8 @@ export function Pagination({
           aria-current={page === currentPage ? "page" : undefined}
           className={`cursor-pointer rounded-lg border px-3.5 py-2 text-sm font-medium transition-all duration-300 ${
             page === currentPage
-              ? "border-[var(--accent-purple)] bg-[var(--accent-purple)] text-white"
-              : "border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:border-[var(--accent-purple)] hover:text-[var(--text-primary)]"
+              ? "border-[var(--accent-orange)] bg-[var(--accent-orange)] text-white"
+              : "border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:border-[var(--accent-orange)] hover:text-[var(--text-primary)]"
           }`}
         >
           {page}
@@ -47,7 +47,7 @@ export function Pagination({
         type="button"
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="cursor-pointer rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-2 text-sm font-medium text-[var(--text-primary)] transition-all duration-300 hover:border-[var(--accent-purple)] disabled:cursor-not-allowed disabled:opacity-40"
+        className="cursor-pointer rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-2 text-sm font-medium text-[var(--text-primary)] transition-all duration-300 hover:border-[var(--accent-orange)] disabled:cursor-not-allowed disabled:opacity-40"
       >
         Next →
       </button>

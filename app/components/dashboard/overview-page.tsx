@@ -14,7 +14,7 @@ export function OverviewPage() {
   return (
     <div className="mx-auto max-w-6xl">
       <div className="mb-6">
-        <p className="text-sm font-medium text-[var(--accent-purple)]">Overview</p>
+        <p className="text-sm font-medium text-[var(--accent-orange)]">Overview</p>
         <h1 className="mt-1 text-2xl font-bold text-[var(--text-primary)] md:text-3xl">
           Dashboard Overview
         </h1>
@@ -67,19 +67,19 @@ export function OverviewPage() {
           <div className="mt-4 flex flex-col gap-3">
             <Link
               href="/dashboard/ai-writer"
-              className="rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-4 py-3 text-sm font-medium text-[var(--text-primary)] no-underline transition-all hover:border-[var(--accent-purple)]"
+              className="rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-4 py-3 text-sm font-medium text-[var(--text-primary)] no-underline transition-all hover:border-[var(--accent-orange)]"
             >
               ✨ Create with AI Writer
             </Link>
             <Link
               href="/dashboard/drafts"
-              className="rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-4 py-3 text-sm font-medium text-[var(--text-primary)] no-underline transition-all hover:border-[var(--accent-purple)]"
+              className="rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-4 py-3 text-sm font-medium text-[var(--text-primary)] no-underline transition-all hover:border-[var(--accent-orange)]"
             >
               📝 View Drafts
             </Link>
             <Link
               href="/blog"
-              className="rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-4 py-3 text-sm font-medium text-[var(--text-primary)] no-underline transition-all hover:border-[var(--accent-purple)]"
+              className="rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-4 py-3 text-sm font-medium text-[var(--text-primary)] no-underline transition-all hover:border-[var(--accent-orange)]"
             >
               🌐 View Live Blog
             </Link>

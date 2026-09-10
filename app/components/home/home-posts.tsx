@@ -36,7 +36,7 @@ export async function HomePosts() {
                         </h2>
                         <Link
                             href="/blog"
-                            className="flex cursor-pointer items-center gap-1 rounded border border-[var(--border)] bg-transparent px-[13px] py-[5px] text-sm text-[var(--text-primary)] no-underline transition-all duration-300 hover:border-[var(--accent-purple)] hover:bg-[rgba(109,40,217,0.1)]"
+                            className="flex cursor-pointer items-center gap-1 rounded border border-[var(--border)] bg-transparent px-[13px] py-[5px] text-sm text-[var(--text-primary)] no-underline transition-all duration-300 hover:border-[var(--accent-orange)] hover:bg-[rgba(255,140,66,0.1)]"
                         >
                             View All →
                         </Link>
@@ -64,7 +64,7 @@ export async function HomePosts() {
                         </h2>
                         <Link
                             href="/blog"
-                            className="flex cursor-pointer items-center gap-1 rounded border border-[var(--border)] bg-transparent px-[13px] py-[5px] text-sm text-[var(--text-primary)] no-underline transition-all duration-300 hover:border-[var(--accent-purple)] hover:bg-[rgba(109,40,217,0.1)]"
+                            className="flex cursor-pointer items-center gap-1 rounded border border-[var(--border)] bg-transparent px-[13px] py-[5px] text-sm text-[var(--text-primary)] no-underline transition-all duration-300 hover:border-[var(--accent-orange)] hover:bg-[rgba(255,140,66,0.1)]"
                         >
                             View All →
                         </Link>
@@ -89,7 +89,7 @@ export async function HomePosts() {
                         </h2>
                         <Link
                             href="/blog"
-                            className="flex cursor-pointer items-center gap-1 rounded border border-[var(--border)] bg-transparent px-[13px] py-[5px] text-sm text-[var(--text-primary)] no-underline transition-all duration-300 hover:border-[var(--accent-purple)] hover:bg-[rgba(109,40,217,0.1)]"
+                            className="flex cursor-pointer items-center gap-1 rounded border border-[var(--border)] bg-transparent px-[13px] py-[5px] text-sm text-[var(--text-primary)] no-underline transition-all duration-300 hover:border-[var(--accent-orange)] hover:bg-[rgba(255,140,66,0.1)]"
                         >
                             View All →
                         </Link>

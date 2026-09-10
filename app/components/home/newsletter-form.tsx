@@ -10,7 +10,7 @@ export function NewsletterForm({ fullWidth = false, compact = false }: { fullWid
         ? "rounded-lg border border-[var(--glass-border)] bg-[var(--bg-primary)] p-4"
         : "mx-auto max-w-7xl rounded-2xl border border-[var(--glass-border)] bg-[var(--bg-secondary)] p-6 text-center shadow-[0_20px_60px_rgba(0,0,0,0.18)] md:p-10"}>
         <div className={compact ? "" : "mx-auto max-w-2xl"}>
-          <p className={compact ? "mb-1 text-xs font-semibold text-[var(--accent-purple)]" : "mb-2 text-sm font-semibold text-[var(--accent-purple)]"}>
+          <p className={compact ? "mb-1 text-xs font-semibold text-[var(--accent-orange)]" : "mb-2 text-sm font-semibold text-[var(--accent-orange)]"}>
             📬 {compact ? "Newsletter" : "DTS Tech AI Newsletter"}
           </p>
           <h2
@@ -41,7 +41,7 @@ export function NewsletterForm({ fullWidth = false, compact = false }: { fullWid
                 name="name"
                 autoComplete="name"
                 placeholder="Your full name"
-                className={`${compact ? "px-3 py-2.5 text-xs" : "px-[13px] py-3 text-sm"} w-full rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] font-normal text-[var(--text-primary)] transition-[border,background] duration-300 placeholder:text-[var(--text-secondary)] focus:border-[var(--accent-purple)] focus:bg-[rgba(109,40,217,0.05)] focus:outline-none`}
+                className={`${compact ? "px-3 py-2.5 text-xs" : "px-[13px] py-3 text-sm"} w-full rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] font-normal text-[var(--text-primary)] transition-[border,background] duration-300 placeholder:text-[var(--text-secondary)] focus:border-[var(--accent-orange)] focus:bg-[rgba(255,140,66,0.05)] focus:outline-none`}
                 required
               />
             </label>
@@ -52,7 +52,7 @@ export function NewsletterForm({ fullWidth = false, compact = false }: { fullWid
                 name="mobile"
                 autoComplete="tel"
                 placeholder="Your mobile number"
-                className={`${compact ? "px-3 py-2.5 text-xs" : "px-[13px] py-3 text-sm"} w-full rounded-md border border-[var(--border)] bg-[var(--bg-primary)] font-normal text-[var(--text-primary)] transition-[border,background] duration-300 placeholder:text-[var(--text-secondary)] focus:border-[var(--accent-purple)] focus:bg-[rgba(109,40,217,0.05)] focus:outline-none`}
+                className={`${compact ? "px-3 py-2.5 text-xs" : "px-[13px] py-3 text-sm"} w-full rounded-md border border-[var(--border)] bg-[var(--bg-primary)] font-normal text-[var(--text-primary)] transition-[border,background] duration-300 placeholder:text-[var(--text-secondary)] focus:border-[var(--accent-orange)] focus:bg-[rgba(255,140,66,0.05)] focus:outline-none`}
                 required
               />
             </label>
@@ -63,13 +63,13 @@ export function NewsletterForm({ fullWidth = false, compact = false }: { fullWid
                 name="email"
                 autoComplete="email"
                 placeholder="you@example.com"
-                className={`${compact ? "px-3 py-2.5 text-xs" : "px-[13px] py-3 text-sm"} w-full rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] font-normal text-[var(--text-primary)] transition-[border,background] duration-300 placeholder:text-[var(--text-secondary)] focus:border-[var(--accent-purple)] focus:bg-[rgba(109,40,217,0.05)] focus:outline-none`}
+                className={`${compact ? "px-3 py-2.5 text-xs" : "px-[13px] py-3 text-sm"} w-full rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] font-normal text-[var(--text-primary)] transition-[border,background] duration-300 placeholder:text-[var(--text-secondary)] focus:border-[var(--accent-orange)] focus:bg-[rgba(255,140,66,0.05)] focus:outline-none`}
                 required
               />
             </label>
             <button
               type="submit"
-              className={`${compact ? "min-h-10 px-4 py-2.5 text-sm" : "min-h-[48px] px-6 py-3 text-base"} mt-auto inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg border-none bg-[var(--accent-purple)] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90`}
+              className={`${compact ? "min-h-10 px-4 py-2.5 text-sm" : "min-h-[48px] px-6 py-3 text-base"} mt-auto inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg border-none bg-[var(--accent-orange)] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90`}
             >
               Subscribe Free
             </button>

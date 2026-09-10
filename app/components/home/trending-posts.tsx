@@ -8,7 +8,7 @@ export function TrendingPosts({ trendingPost }: { trendingPost: Article }) {
     const imageAlt = trendingPost.featuredImage?.alt ?? trendingPost.imageAlt ?? trendingPost.title;
 
     return (
-        <article className="flex flex-col overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--bg-secondary)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-purple)]">
+        <article className="flex flex-col overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--bg-secondary)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-orange)]">
             <img
                 src={imageUrl}
                 alt={imageAlt}
@@ -42,7 +42,7 @@ export function TrendingPosts({ trendingPost }: { trendingPost: Article }) {
                     </div>
                     <Link
                         href={`/blog/${trendingPost.slug}`}
-                        className="flex items-center gap-1 text-xs font-semibold text-[var(--accent-purple)] no-underline transition-all duration-300 hover:gap-2"
+                        className="flex items-center gap-1 text-xs font-semibold text-[var(--accent-orange)] no-underline transition-all duration-300 hover:gap-2"
                     >
                         Read Article →
                     </Link>

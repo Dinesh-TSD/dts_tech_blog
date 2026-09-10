@@ -67,7 +67,7 @@ export function DraftsPage() {
     <div className="mx-auto max-w-6xl">
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <p className="text-sm font-medium text-[var(--accent-purple)]">Drafts</p>
+          <p className="text-sm font-medium text-[var(--accent-orange)]">Drafts</p>
           <h1 className="mt-1 text-2xl font-bold text-[var(--text-primary)] md:text-3xl">
             Saved Drafts
           </h1>
@@ -90,7 +90,7 @@ export function DraftsPage() {
       {loading ? (
         <div className="flex items-center justify-center py-12">
           <div className="text-center">
-            <div className="mb-4 inline-block h-8 w-8 animate-spin rounded-full border-4 border-[var(--border)] border-t-[var(--accent-purple)]" />
+            <div className="mb-4 inline-block h-8 w-8 animate-spin rounded-full border-4 border-[var(--border)] border-t-[var(--accent-orange)]" />
             <p className="text-sm text-[var(--text-secondary)]">Loading drafts...</p>
           </div>
         </div>
@@ -107,13 +107,13 @@ export function DraftsPage() {
           {drafts.map((draft) => (
             <article
               key={draft._id}
-              className={`${panel} flex flex-col gap-4 transition-all hover:border-[var(--accent-purple)]`}
+              className={`${panel} flex flex-col gap-4 transition-all hover:border-[var(--accent-orange)]`}
             >
               <div className="flex-1">
-                <span className="inline-flex rounded bg-[var(--badge-bg)] px-2 py-0.5 text-[10px] font-bold tracking-wide text-[var(--accent-purple)] uppercase">
+                <span className="inline-flex rounded bg-[var(--badge-bg)] px-2 py-0.5 text-[10px] font-bold tracking-wide text-[var(--accent-orange)] uppercase">
                   {draft.category}
                 </span>
-                <h2 className="mt-3 line-clamp-2 text-base font-bold text-[var(--text-primary)] hover:text-[var(--accent-purple)]">
+                <h2 className="mt-3 line-clamp-2 text-base font-bold text-[var(--text-primary)] hover:text-[var(--accent-orange)]">
                   {draft.title}
                 </h2>
                 <p className="mt-2 text-xs text-[var(--text-secondary)]">
@@ -123,13 +123,13 @@ export function DraftsPage() {
               <div className="flex gap-2">
                 <Link
                   href={`/blog/${draft.slug}`}
-                  className="flex-1 cursor-pointer rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-2 text-center text-xs font-medium text-[var(--text-primary)] transition-all hover:border-[var(--accent-purple)] hover:text-[var(--accent-purple)]"
+                  className="flex-1 cursor-pointer rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-2 text-center text-xs font-medium text-[var(--text-primary)] transition-all hover:border-[var(--accent-orange)] hover:text-[var(--accent-orange)]"
                 >
                   View
                 </Link>
                 <button
                   type="button"
-                  className="flex-1 cursor-pointer rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-2 text-center text-xs font-medium text-[var(--text-primary)] transition-all hover:border-[var(--accent-purple)] hover:text-[var(--accent-purple)]"
+                  className="flex-1 cursor-pointer rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-2 text-center text-xs font-medium text-[var(--text-primary)] transition-all hover:border-[var(--accent-orange)] hover:text-[var(--accent-orange)]"
                 >
                   Edit
                 </button>

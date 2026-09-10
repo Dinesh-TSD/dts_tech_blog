@@ -38,13 +38,13 @@ export function HomeSideContent() {
         
                             <Link
                                 href="/blog"
-                                className="flex cursor-pointer items-center justify-center gap-1 rounded-lg border border-[var(--border)] bg-transparent p-[9px] text-sm font-medium text-[var(--text-primary)] no-underline transition-all duration-300 hover:border-[var(--accent-purple)] hover:bg-[rgba(109,40,217,0.1)]"
+                                className="flex cursor-pointer items-center justify-center gap-1 rounded-lg border border-[var(--border)] bg-transparent p-[9px] text-sm font-medium text-[var(--text-primary)] no-underline transition-all duration-300 hover:border-[var(--accent-orange)] hover:bg-[rgba(255,140,66,0.1)]"
                             >
                                 View All Categories →
                             </Link>
                         </div>
                         <div className={`${card} flex flex-col gap-1`}>
-                            <div className="text-xs font-semibold text-[var(--accent-purple)]">
+                            <div className="text-xs font-semibold text-[var(--accent-orange)]">
                                 Stay in the Loop
                             </div>
         

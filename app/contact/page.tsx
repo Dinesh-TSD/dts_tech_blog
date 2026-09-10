@@ -55,7 +55,7 @@ export default function ContactPage() {
                 <li key={item.label} className="flex items-start gap-3">
                   <span className="text-xl">{item.icon}</span>
                   <div>
-                    <p className="text-xs font-semibold tracking-wide text-[var(--accent-purple)] uppercase">
+                    <p className="text-xs font-semibold tracking-wide text-[var(--accent-orange)] uppercase">
                       {item.label}
                     </p>
                     <p className="text-sm text-[var(--text-primary)]">{item.value}</p>

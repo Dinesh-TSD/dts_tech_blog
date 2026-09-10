@@ -25,7 +25,7 @@ export function ProfilePage() {
   return (
     <div className="mx-auto max-w-3xl">
       <div className="mb-6">
-        <p className="text-sm font-medium text-[var(--accent-purple)]">Profile</p>
+        <p className="text-sm font-medium text-[var(--accent-orange)]">Profile</p>
         <h1 className="mt-1 text-2xl font-bold text-[var(--text-primary)] md:text-3xl">
           Your Profile
         </h1>
@@ -35,7 +35,7 @@ export function ProfilePage() {
       </div>
 
       <div className={`${panel} mb-6 flex items-center gap-4`}>
-        <div className="flex size-16 items-center justify-center overflow-hidden rounded-full bg-[var(--accent-purple)] text-xl font-bold text-white">
+        <div className="flex size-16 items-center justify-center overflow-hidden rounded-full bg-[var(--accent-orange)] text-xl font-bold text-white">
           {picture ? (
             <img src={picture} alt={name} className="size-full object-cover" />
           ) : (
@@ -50,7 +50,7 @@ export function ProfilePage() {
         <div>
           <p className="text-lg font-bold text-[var(--text-primary)]">{name}</p>
           <p className="text-sm text-[var(--text-secondary)]">{email}</p>
-          <p className="mt-1 text-xs text-[var(--accent-purple)] capitalize">
+          <p className="mt-1 text-xs text-[var(--accent-orange)] capitalize">
             {provider === "google" ? "Google Account" : "Email Account"}
           </p>
         </div>

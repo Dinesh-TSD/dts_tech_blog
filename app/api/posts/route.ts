@@ -146,7 +146,7 @@ export async function POST(request: NextRequest) {
       excerpt: body.excerpt,
       category: body.category,
       categorySlug: body.categorySlug,
-      categoryColor: body.categoryColor || "#8b5cf6",
+      categoryColor: body.categoryColor || "#ff8c42",
       tags: Array.isArray(body.tags) ? body.tags : [],
       featuredImage: body.featuredImage || { url: "", alt: "" },
       author: body.author || { name: "DTS Tech AI", role: "AI Writer" },

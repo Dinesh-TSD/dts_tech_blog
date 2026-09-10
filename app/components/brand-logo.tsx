@@ -18,7 +18,7 @@ export function BrandLogo({ className = "", href, size = "md" }: BrandLogoProps)
   const content = (
     <div className={`flex items-center gap-2.5 ${className}`}>
       <div
-        className={`flex ${s.box} shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-[#7c3aed] via-[#6d28d9] to-[#3b82f6] shadow-[0_0_16px_rgba(109,40,217,0.35)] ring-1 ring-white/10`}
+        className={`flex ${s.box} shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-[#ff9c4d] via-[#ff8c42] to-[#e67e22] shadow-[0_0_16px_rgba(255,140,66,0.35)] ring-1 ring-white/10`}
         aria-hidden
       >
         <span className={`${s.label} font-black tracking-[-0.5px] text-white`}>
@@ -26,7 +26,7 @@ export function BrandLogo({ className = "", href, size = "md" }: BrandLogoProps)
         </span>
       </div>
       <span className={`${s.name} font-bold tracking-[-0.5px] text-[var(--text-primary)]`}>
-        DTS TECH <span className="text-[var(--accent-purple)]">INSIGHTS</span>
+        DTS TECH <span className="text-[var(--accent-orange)]">INSIGHTS</span>
       </span>
     </div>
   );

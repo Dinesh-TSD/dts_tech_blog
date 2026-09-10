@@ -154,7 +154,7 @@ export function BlogListing() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search articles, topics, or keywords..."
-              className="w-full rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] py-2.5 pr-4 pl-10 text-sm text-[var(--text-primary)] transition-[border,background] duration-300 placeholder:text-[var(--text-secondary)] focus:border-[var(--accent-purple)] focus:bg-[rgba(109,40,217,0.05)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] py-2.5 pr-4 pl-10 text-sm text-[var(--text-primary)] transition-[border,background] duration-300 placeholder:text-[var(--text-secondary)] focus:border-[var(--accent-orange)] focus:bg-[rgba(255,140,66,0.05)] focus:outline-none"
             />
           </div>
 
@@ -169,7 +169,7 @@ export function BlogListing() {
               id="category-filter"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="w-full cursor-pointer rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-2.5 text-sm text-[var(--text-primary)] transition-[border,background] duration-300 focus:border-[var(--accent-purple)] focus:outline-none"
+              className="w-full cursor-pointer rounded-lg border border-[var(--border)] bg-[var(--bg-primary)] px-3 py-2.5 text-sm text-[var(--text-primary)] transition-[border,background] duration-300 focus:border-[var(--accent-orange)] focus:outline-none"
             >
               {categoryOptions.map((opt) => (
                 <option key={opt.slug} value={opt.slug}>
@@ -189,8 +189,8 @@ export function BlogListing() {
                 type="button"
                 onClick={() => setActiveTab(tab.id)}
                 className={`cursor-pointer rounded-lg border px-3.5 py-1.5 text-sm font-medium transition-all duration-300 ${isActive
-                    ? "border-[var(--accent-purple)] bg-[var(--accent-purple)] text-white"
-                    : "border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:border-[var(--accent-purple)] hover:text-[var(--text-primary)]"
+                    ? "border-[var(--accent-orange)] bg-[var(--accent-orange)] text-white"
+                    : "border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:border-[var(--accent-orange)] hover:text-[var(--text-primary)]"
                   }`}
               >
                 {tab.label}
@@ -242,7 +242,7 @@ export function BlogListing() {
           <button
             type="button"
             onClick={clearFilters}
-            className="mt-4 cursor-pointer rounded-lg border border-[var(--border)] bg-transparent px-4 py-2 text-sm font-medium text-[var(--text-primary)] transition-all duration-300 hover:border-[var(--accent-purple)] hover:bg-[rgba(109,40,217,0.1)]"
+            className="mt-4 cursor-pointer rounded-lg border border-[var(--border)] bg-transparent px-4 py-2 text-sm font-medium text-[var(--text-primary)] transition-all duration-300 hover:border-[var(--accent-orange)] hover:bg-[rgba(255,140,66,0.1)]"
           >
             Clear all filters
           </button>

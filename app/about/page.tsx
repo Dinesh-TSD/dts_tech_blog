@@ -63,7 +63,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
           {stats.map((s) => (
             <div key={s.label} className={`${card} text-center`}>
-              <p className="text-2xl font-bold text-[var(--accent-purple)]">{s.value}</p>
+              <p className="text-2xl font-bold text-[var(--accent-orange)]">{s.value}</p>
               <p className="mt-1 text-sm text-[var(--text-secondary)]">{s.label}</p>
             </div>
           ))}
@@ -102,7 +102,7 @@ export default function AboutPage() {
             <div key={member.name} className={`${card} text-center`}>
               <span className="text-4xl">{member.emoji}</span>
               <h3 className="mt-3 font-bold text-[var(--text-primary)]">{member.name}</h3>
-              <p className="mt-1 text-sm text-[var(--accent-purple)]">{member.role}</p>
+              <p className="mt-1 text-sm text-[var(--accent-orange)]">{member.role}</p>
             </div>
           ))}
         </div>

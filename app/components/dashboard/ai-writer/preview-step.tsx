@@ -37,7 +37,7 @@ export function PreviewStep({ data, onSave }: PreviewStepProps) {
         <>
           <article className={`${panel} mt-4`}>
             <div className="flex flex-wrap items-center gap-3">
-              <span className="rounded bg-[var(--badge-bg)] px-2 py-1 text-xs font-semibold text-[var(--accent-purple)]">{post?.category ?? "Article"}</span>
+              <span className="rounded bg-[var(--badge-bg)] px-2 py-1 text-xs font-semibold text-[var(--accent-orange)]">{post?.category ?? "Article"}</span>
               <span className="text-sm text-[var(--text-secondary)]">{post?.readingTime ?? 0} min read</span>
               <span className="text-sm text-[var(--text-secondary)]">{post?.views ?? 0} views</span>
             </div>
@@ -62,7 +62,7 @@ export function PreviewStep({ data, onSave }: PreviewStepProps) {
               </div>
             ) : null}
             {post?.conclusion.paragraphs.length ? (
-              <div className="mt-8 rounded-lg border-2 border-[var(--accent-purple)] bg-[var(--accent-purple)]/10 p-6">
+              <div className="mt-8 rounded-lg border-2 border-[var(--accent-orange)] bg-[var(--accent-orange)]/10 p-6">
                 <h3 className="text-2xl font-bold text-[var(--text-primary)]">{post.conclusion.heading}</h3>
                 {post.conclusion.paragraphs.map((paragraph) => <p key={paragraph} className="mt-3 leading-7 text-[var(--text-secondary)]">{paragraph}</p>)}
               </div>

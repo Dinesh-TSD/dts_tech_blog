@@ -13,7 +13,7 @@ export function BlogArticleCard({
   const imageUrl = article.featuredImage?.url ?? article.image ?? "";
   const imageAlt = article.featuredImage?.alt ?? article.imageAlt ?? article.title;
   return (
-    <article className="overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--bg-secondary)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-purple)]">
+    <article className="overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--bg-secondary)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-orange)]">
       <div
         className={`flex flex-col md:flex-row ${reverse ? "md:flex-row-reverse" : ""}`}
       >
@@ -46,7 +46,7 @@ export function BlogArticleCard({
             </div>
             <Link
               href={`/blog/${article.slug}`}
-              className="inline-flex items-center gap-1 text-sm font-semibold text-[var(--accent-purple)] no-underline transition-all duration-300 hover:gap-2"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-[var(--accent-orange)] no-underline transition-all duration-300 hover:gap-2"
             >
               Read Article →
             </Link>

@@ -46,7 +46,7 @@ export function PublishStep({ data, onPublishSuccess }: PublishStepProps) {
         excerpt: post.excerpt,
         category: post.category,
         categorySlug: post.categorySlug,
-        categoryColor: post.categoryColor || "#8b5cf6",
+        categoryColor: post.categoryColor || "#ff8c42",
         tags: post.tags || [],
         featuredImage: post.featuredImage,
         author: post.author,
@@ -111,7 +111,7 @@ export function PublishStep({ data, onPublishSuccess }: PublishStepProps) {
         excerpt: post.excerpt,
         category: post.category,
         categorySlug: post.categorySlug,
-        categoryColor: post.categoryColor || "#8b5cf6",
+        categoryColor: post.categoryColor || "#ff8c42",
         tags: post.tags || [],
         featuredImage: post.featuredImage,
         author: post.author,
@@ -206,7 +206,7 @@ export function PublishStep({ data, onPublishSuccess }: PublishStepProps) {
       {/* Article Preview */}
       <article className={`${panel} mb-6`}>
         <div className="flex flex-wrap items-center gap-3">
-          <span className="rounded bg-[var(--badge-bg)] px-2 py-1 text-xs font-semibold text-[var(--accent-purple)]">
+          <span className="rounded bg-[var(--badge-bg)] px-2 py-1 text-xs font-semibold text-[var(--accent-orange)]">
             {post?.category ?? "Article"}
           </span>
           <span className="text-sm text-[var(--text-secondary)]">{post?.readingTime ?? 0} min read</span>

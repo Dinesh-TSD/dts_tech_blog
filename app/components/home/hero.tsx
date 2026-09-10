@@ -23,7 +23,7 @@ export default function Hero() {
             <h1 className="m-0 text-5xl leading-[1.2] font-bold text-[var(--text-primary)]">
               Learn Build Grow with
               <br />
-              <span className="bg-gradient-to-r from-[#8b5cf6] to-[#3b82f6] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#ff8c42] to-[#e67e22] bg-clip-text text-transparent">
                 AI Tech Insights
               </span>
             </h1>
@@ -51,18 +51,18 @@ export default function Hero() {
           </div>
 
           <div className="relative flex items-center justify-center">
-            <div className="absolute size-full rounded-full bg-[radial-gradient(circle,rgba(59,130,246,0.2)_0%,transparent_70%)] blur-[32px]" />
+            <div className="absolute size-full rounded-full bg-[radial-gradient(circle,rgba(255,140,66,0.2)_0%,transparent_70%)] blur-[32px]" />
             <div className="relative z-10 flex flex-col gap-4">
               <div className="min-w-[200px] rounded-lg border border-[var(--glass-border)] bg-[var(--glass-bg)] p-[13px] backdrop-blur-[5px]">
                 <div className="mb-2 text-xs font-semibold text-[var(--text-primary)]">
                   Top Topics
                 </div>
                 <div className="mb-1 flex items-center gap-2 text-xs text-[var(--text-secondary)]">
-                  <div className="size-2 rounded-full bg-[var(--accent-blue)]" />
+                  <div className="size-2 rounded-full bg-[var(--accent-orange)]" />
                   <span>React</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-[var(--text-secondary)]">
-                  <div className="size-2 rounded-full bg-[var(--accent-blue)]" />
+                  <div className="size-2 rounded-full bg-[var(--accent-orange)]" />
                   <span>Next.js</span>
                 </div>
               </div>

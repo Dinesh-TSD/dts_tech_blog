@@ -23,7 +23,7 @@ export function PageHero({
         <h1 className="mt-4 text-4xl font-bold text-[var(--text-primary)] md:text-5xl">
           {title}{" "}
           {titleAccent && (
-            <span className="bg-gradient-to-r from-[#8b5cf6] to-[#3b82f6] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#ff8c42] to-[#e67e22] bg-clip-text text-transparent">
               {titleAccent}
             </span>
           )}

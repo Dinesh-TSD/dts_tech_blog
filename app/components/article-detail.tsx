@@ -239,7 +239,7 @@ export function ArticleDetailContent({
                     key={idx}
                     className="group rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] p-4"
                   >
-                    <summary className="flex cursor-pointer items-center justify-between font-semibold text-[var(--text-primary)] hover:text-[var(--accent-purple)]">
+                    <summary className="flex cursor-pointer items-center justify-between font-semibold text-[var(--text-primary)] hover:text-[var(--accent-orange)]">
                       <span>{faq.question}</span>
                       <span className="transition-transform group-open:rotate-180">▼</span>
                     </summary>
@@ -254,7 +254,7 @@ export function ArticleDetailContent({
 
           {/* Conclusion Section */}
           {article.conclusion && article.conclusion.paragraphs.length > 0 && (
-            <div id="conclusion" className="rounded-lg border-2 border-[var(--accent-purple)] bg-[var(--accent-purple)]/10 p-6">
+            <div id="conclusion" className="rounded-lg border-2 border-[var(--accent-orange)] bg-[var(--accent-orange)]/10 p-6">
               <h3 className="mb-3 text-2xl font-bold text-[var(--text-primary)]">
                 {article.conclusion.heading || "Conclusion"}
               </h3>
@@ -288,7 +288,7 @@ export function ArticleSidebar({ article }: { article: Article }) {
             <a
               key={item.id}
               href={`#${item.id}`}
-              className={`text-sm hover:text-[var(--accent-purple)] transition-colors `}
+              className={`text-sm hover:text-[var(--accent-orange)] transition-colors `}
             >
               {item.title}
             </a>
@@ -307,13 +307,13 @@ export function ArticleSidebar({ article }: { article: Article }) {
       </div>
 
       <div className={`${card} flex min-h-[300px] flex-col items-center justify-center rounded-lg border-2 border-dashed border-[var(--border)] text-center`}>
-        <span className="text-xs font-semibold tracking-wide text-[var(--accent-purple)] uppercase">
+        <span className="text-xs font-semibold tracking-wide text-[var(--accent-orange)] uppercase">
           Advertisement
         </span>
         <p className="mt-2 text-sm text-[var(--text-secondary)]">300 × 250 Ad Slot</p>
       </div>
 
-      <button className="w-full rounded-lg bg-[var(--accent-purple)] px-4 py-3 font-bold text-white hover:opacity-90 transition-opacity">
+      <button className="w-full rounded-lg bg-[var(--accent-orange)] px-4 py-3 font-bold text-white hover:opacity-90 transition-opacity">
         Find My Tool →
       </button>
     </aside>
@@ -333,7 +333,7 @@ export function RelatedArticles({ articles }: { articles: Article[] }) {
           <Link
             key={related.slug}
             href={`/blog/${related.slug}`}
-            className="group overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--bg-secondary)] no-underline transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-[var(--accent-purple)]"
+            className="group overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--bg-secondary)] no-underline transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-[var(--accent-orange)]"
           >
             <div className="relative overflow-hidden bg-gray-200 dark:bg-gray-700">
               <img
@@ -353,7 +353,7 @@ export function RelatedArticles({ articles }: { articles: Article[] }) {
                 </span>
                 <span className="text-xs text-[var(--text-secondary)]">⏱️ {related.readingTime}</span>
               </div>
-              <h3 className="mt-3 text-sm font-bold leading-snug text-[var(--text-primary)] group-hover:text-[var(--accent-purple)] transition-colors">
+              <h3 className="mt-3 text-sm font-bold leading-snug text-[var(--text-primary)] group-hover:text-[var(--accent-orange)] transition-colors">
                 {related.title}
               </h3>
               <p className="mt-2 line-clamp-2 text-xs text-[var(--text-secondary)]">
